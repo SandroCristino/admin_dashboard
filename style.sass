@@ -1,0 +1,52 @@
+@import '../node_modules/bootstrap/scss/bootstrap'
+
+
+body
+    background-color: $green-100
+
+    svg:hover
+        opacity: 50
+        transform: scale(1.1) 
+        cursor: pointer
+    #navbar,
+    #sidebar
+        background-color: $blue-300
+        li:hover
+            opacity: 50
+            transform: scale(1.1) 
+            cursor: pointer
+
+#sidebar_btn 
+    display: none 
+    
+#container_collection
+    max-width: 1000px
+        
+#right_container
+    margin: 0
+    padding: 0
+
+#headline_projects
+    padding-bottom: 0 !important
+
+@media only screen and (max-width: 767px)
+
+   
+    #main_content_right
+        display: none !important
+    #container_collection
+        text-align: center
+        width: 100%  
+        margin-left: 5%
+    body
+        height: 150vh !important
+    #sidebar
+        position: absolute
+        z-index: 10
+        height: 110%
+    #sidebar_btn
+        display: block !important
+    
+
+       
+
